@@ -1,0 +1,85 @@
+/* La familia font tiene que ver con todo lo referente a texto*/
+/* Vamos a cambiar el fondo del body con la propiedad background */
+body {
+    font-family: segoe UI;
+    background: url("../img/fondo.svg") no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Virtual height*/
+    height: 100vh;
+}
+
+.contenedor{
+    /* color de fondo del div*/
+    background: #ffffff;
+    /* ancho del div .contenedor*/
+    /* width: px % vw */
+    width: 450px;
+    /* height: 550px;*/
+    border-radius: 9px;
+}
+
+.contenedor-texto{
+    /* padding nos genera un espacio desde adentro a fuera*/
+    padding: 20px;
+    text-align: center;
+}
+
+.imagen-fondo{
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+#boton-pagar {
+    /* para cambiar el color del texto se usa el atributo color */
+    color: #fff;
+    background-color: #382ae1;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    box-shadow: -4px 8px 32px -2px rgba(56, 42, 225, 0.41);
+  -webkit-box-shadow: -4px 8px 32px -2px rgba(56, 42, 225, 0.41);
+  -moz-box-shadow: -4px 8px 32px -2px rgba(56, 42, 225, 0.41);
+}
+
+.boton-cancelar {
+    /* existe algo llamado margin 
+    margin-top => arriba
+    margin-bottom => abajo
+    margin-left => izquierda
+    margin-right => derecha
+    */
+    margin-top: 20px;
+    background-color: transparent;
+    border:none;
+    width: 100%;
+    cursor: pointer;
+    /* el peso del texto va desde 100 a 900 ademas tiene el bold*/
+    font-weight: 800;
+}
+
+.contenedor-detalle {
+    display: flex;
+    /* ordenar los elementos de manera vertical. Puede recibir 3 tipo de alineacion
+    1) flex-start
+    2) center
+    3) flex-end
+    4 */
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(56, 42, 225, 0.11);
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 9px;
+}
+
+/* para acceder a un elemento hijo, debo poner su tipo selector */
+
+.contenedor-detalle a {
+    text-decoration: none;
+    font-size: 12px;
+}
